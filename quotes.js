@@ -321,6 +321,7 @@ var quoteMachine = {
 		for(key in this.quotes) {
 			console.log("Key # " + key + "is " + this.quotes[key].quote.length + "characters");
 		}
-	}
+	},
+
 }
 
