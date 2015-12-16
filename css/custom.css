@@ -1,0 +1,12 @@
+.main {
+	height:100vh;
+  background: url('https://i.scdn.co/image/781f636483f9f08e9f183021e81812cdd0512b7e') no-repeat left center fixed; 
+/*  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
+body {
+	  background-color: rgba(0,0,0,.3);
+}
