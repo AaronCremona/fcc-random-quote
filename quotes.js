@@ -20,6 +20,14 @@ var quoteMachine = {
 		});
 	},
 
+	createKeyArr: function() {
+		var keyArr = [];
+		for (var key in this.quotes) {
+			keyArr.push(key);
+		}
+		return keyArr;
+	},
+
 	quotes: {
 		"1": {
 			quote: "You are young and life is long <br> \
