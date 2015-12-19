@@ -5,4 +5,6 @@ $(document).ready(function(){
 		console.log(json.name);
 		console.log(json.preview_url)
 	});
+
+	quoteMachine.countChar();
 });

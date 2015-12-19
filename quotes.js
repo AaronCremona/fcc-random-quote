@@ -318,10 +318,14 @@ var quoteMachine = {
 	},
 
 	countChar: function() {
+		var length;
 		for(key in this.quotes) {
-			console.log("Key # " + key + "is " + this.quotes[key].quote.length + "characters");
+			length = this.quotes[key].quote.length;
+			console.log("Key # " + key + "is " + length + " characters");
+			if (length > 144) {
+				console.log("shit that's too long");
+			}
 		}
 	},
-
 }
 
