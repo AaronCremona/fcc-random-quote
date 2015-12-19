@@ -2,6 +2,4 @@
 // quoteMachine.getSpotifyTrack(currSong.id);
 
 var qm = quoteMachine;
-keyArr = qm.createKeyArr();
-
-console.log(keyArr);
+qm.initQM();

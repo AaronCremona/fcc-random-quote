@@ -1,4 +1,19 @@
 var quoteMachine = {
+	keyArr: [],
+	numKeys: 0,
+	currQuote: "",
+
+	initQM: function(){
+		this.populateKeyArr();
+		this.newRandomQuote();
+	},
+
+	newRandomQuote: function(){
+		var newKey = String(Math.floor(Math.random() * this.numKeys) + 1);
+		this.currQuote = this.quotes[newKey];
+		this.updateSpotifyInfo();
+	},
+
 	countChar: function() {
 		var length;
 		for(key in this.quotes) {
@@ -10,8 +25,8 @@ var quoteMachine = {
 		}
 	},
 
-	getSpotifyTrack: function(id) {
-		var url = "https://api.spotify.com/v1/tracks/" + id;
+	updateSpotifyInfo: function(id) {
+		var url = "https://api.spotify.com/v1/tracks/" + this.currQuote.id;
 		$.getJSON(url, function(json){
 			console.log(json.album.name);
 			console.log(json.artists[0].name);
@@ -20,14 +35,13 @@ var quoteMachine = {
 		});
 	},
 
-	createKeyArr: function() {
-		var keyArr = [];
+	populateKeyArr: function() {
 		for (var key in this.quotes) {
-			keyArr.push(key);
+			this.keyArr.push(key);
 		}
-		return keyArr;
+		this.numKeys = this.keyArr.length;
 	},
-
+	
 	quotes: {
 		"1": {
 			quote: "You are young and life is long <br> \
