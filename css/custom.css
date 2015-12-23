@@ -104,6 +104,25 @@ img {
 }
 
 .btn {
-	width: 40%;
+	width: 49%;
 	font-size: .5em;
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+}
+
+.btn-success {
+	background-color: rgba(92,184,92,.5);
+    border-color: rgba(76,174,76,.5);
+}
+
+.btn-info {
+	background-color: rgba(91,192,222,.5);
+    border-color: rgba(70,184,218,.5);
+}
+
+.preview-iframe {
+	margin: 10% auto 0 auto;
+	height: 10%;
+	width: 50%
 }
