@@ -27,7 +27,8 @@ var quoteMachine = {
 	},
 
 	updateSpotifyDiv: function() {
-		var url = "https://api.spotify.com/v1/tracks/" + this.currQuote.id;
+		// var url = "https://api.spotify.com/v1/tracks/" + this.currQuote.id;
+		var url = "json/" + this.currQuote.id;
 		$.getJSON(url, function(json){
 			console.log(json.album.name);
 			console.log(json.artists[0].name);
