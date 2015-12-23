@@ -2,9 +2,9 @@ html {
 	height: 100vh;
 }
 
-div {
+/*div {
 	border: red 1px dashed;
-}
+}*/
 
 body {
 	position: absolute;
@@ -52,11 +52,15 @@ body:before {
 	.app {
 		height: 80%;
 	}
+
+	.lyric-container {
+		font-size: 3em;
+	}
 }
 
 .grey-background {
 	background: rgba(0,0,0,.5);
-	color: #eee;
+	color: #ddd;
 }
 
 .subtitle {
@@ -93,7 +97,7 @@ img {
 }
 
 .lyric-container {
-	font-size: 3em;
+	font-size: 2em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -109,6 +113,7 @@ img {
 	padding: 0;
 	margin: 0;
 	border-radius: 0;
+	color: #ddd;
 }
 
 .btn-success {
