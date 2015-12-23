@@ -1,4 +1,4 @@
-function resizeGreyBackground() {
+function resize() {
 	var imgWidth = $(".album-art .img").css("width"),
 		albumContainerHeight = $(".album-container").css("height");
 	$(".left-col-width").css("width", imgWidth);
@@ -6,12 +6,12 @@ function resizeGreyBackground() {
 }
 
 $(document).ready(function(){
-	resizeGreyBackground();
+	resize();
 
 });
 
 $(window).resize(function() {
-	resizeGreyBackground();
+	resize();
 });
 
 var qm = quoteMachine;
