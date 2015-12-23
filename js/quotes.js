@@ -52,23 +52,21 @@ var quoteMachine = {
 
 	quotes: {
 		"1": {
-			quote: "You are young and life is long <br> \
-				and there is time to kill today <br> \
-				And then one day you find <br> \
-				Ten years have got behind you <br> \
-				No one told you when to run <br> \
+			quote: "You are young and life is long \
+				Ten years have got behind you \
+				No one told you when to run \
 				You missed the starting gun",
 			id: "23W5DHu31ZLW9q0p2wQxfN",
 		},
 		"2": {
-			quote: "Yes, how many times can a man turn his head <br> \
-				Pretending he just doesn't see ? <br> \
-				The answer my friend is blowin' in the wind <br> \
+			quote: "Yes, how many times can a man turn his head \
+				Pretending he just doesn't see ? \
+				The answer my friend is blowin' in the wind \
 				The answer is blowin' in the wind.",
 			id: "18GiV1BaXzPVYpp9rmOg0E",
 		},
 		"3": {
-			quote: "Yes, they're sharing a drink they call loneliness <br> \
+			quote: "Yes, they're sharing a drink they call loneliness \
 				But it's better than drinkin' alone",
 			id: "70C4NyhjD5OZUMzvWZ3njJ",
 		},

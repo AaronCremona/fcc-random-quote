@@ -91,3 +91,22 @@ img {
 .no-padding {
 	padding: 0;
 }
+
+.lyric-container {
+	font-size: 3em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.buttons {
+	text-align: center;
+}
+
+.btn {
+/*	padding: 0;
+	margin: 0;
+	border-radius: 0;*/
+	width: 40%;
+	font-size: .5em;
+}
