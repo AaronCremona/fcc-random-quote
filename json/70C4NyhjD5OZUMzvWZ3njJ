@@ -1,0 +1,55 @@
+{
+  "album" : {
+    "album_type" : "album",
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/69wjSAZXZiD2EBia3b3gxL"
+    },
+    "href" : "https://api.spotify.com/v1/albums/69wjSAZXZiD2EBia3b3gxL",
+    "id" : "69wjSAZXZiD2EBia3b3gxL",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/460b81e8a291a65056e9a24d8f197037f31c7662",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/458872821cb588454a37b232b803cb508d926386",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab5bb90e2caaacc817332c2109206863921b0e6e",
+      "width" : 64
+    } ],
+    "name" : "Piano Man (Legacy Edition)",
+    "type" : "album",
+    "uri" : "spotify:album:69wjSAZXZiD2EBia3b3gxL"
+  },
+  "artists" : [ {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e"
+    },
+    "href" : "https://api.spotify.com/v1/artists/6zFYqv1mOsgBRQbae3JJ9e",
+    "id" : "6zFYqv1mOsgBRQbae3JJ9e",
+    "name" : "Billy Joel",
+    "type" : "artist",
+    "uri" : "spotify:artist:6zFYqv1mOsgBRQbae3JJ9e"
+  } ],
+  "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "RO", "SE", "SG", "SI", "SK", "SV", "TR", "TW", "US", "UY" ],
+  "disc_number" : 1,
+  "duration_ms" : 339000,
+  "explicit" : false,
+  "external_ids" : {
+    "isrc" : "USSM17300504"
+  },
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/track/70C4NyhjD5OZUMzvWZ3njJ"
+  },
+  "href" : "https://api.spotify.com/v1/tracks/70C4NyhjD5OZUMzvWZ3njJ",
+  "id" : "70C4NyhjD5OZUMzvWZ3njJ",
+  "name" : "Piano Man",
+  "popularity" : 67,
+  "preview_url" : "https://p.scdn.co/mp3-preview/7f1dc0e2f56c946849ac2e61dfa1ce827fb8dc70",
+  "track_number" : 2,
+  "type" : "track",
+  "uri" : "spotify:track:70C4NyhjD5OZUMzvWZ3njJ"
+}
