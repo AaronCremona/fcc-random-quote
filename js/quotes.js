@@ -69,7 +69,8 @@ var qm = {
 	},
 
 	updatePreview: function() {
-
+		$('.preview video source').attr('src', this.currSong.previewUrl);
+		$(".preview video")[0].load();
 	},
 
 	countKeys: function() {

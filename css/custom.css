@@ -133,8 +133,6 @@ img {
     border-color: rgba(70,184,218,.5);
 }
 
-.preview-iframe {
-	margin: 10% auto 0 auto;
-	height: 10%;
-	width: 50%
+.preview {
+	margin-left: 25%;
 }
