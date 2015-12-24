@@ -18,8 +18,6 @@ body {
 body:before {
 	content: "";
 	position: absolute;
-/*	background: url('../img/e5f5a50956c2c7dd5411051ca507b4f771d6d816.jpg');
-	background: url('../img/ddde54f8e79714523603388c3f76d136539bdb56.jpg');*/
 	background: url('../img/d93d22956919a0878b494f5b09230074b1c5dd43.jpg');
 	background-size: cover;
 	z-index: -1;

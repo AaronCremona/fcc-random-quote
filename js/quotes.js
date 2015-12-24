@@ -2,24 +2,68 @@ var qm = {
 	numKeys: 0,
 
 	currSong: {
+		artist: "",
+		album: "",
+		track: "",
+		img: "",
+		previewUrl: "",
+		quote: ""
 	},
 
 	init: function(){
 		this.countKeys();
-		return this.newRandomQuote();
+		this.newRandomQuote();
 	},
 
 	newRandomQuote: function(){
 		var newKey = String(Math.floor(Math.random() * this.numKeys) + 1);
 		var url = "https://api.spotify.com/v1/tracks/" + this.quotes[newKey].id;
-	
+		
+		this.currSong.quote = this.quotes[newKey].quote;
+
 		$.getJSON(url, function(json){
-			console.log(json.album.name);
-			console.log(json.artists[0].name);
-			console.log(json.name);
-			console.log(json.preview_url);
-			console.log(this.quotes);
+			console.log("album name: " + json.album.name);
+			console.log("artist name: " + json.artists[0].name);
+			console.log("track name: " + json.name);
+			console.log("preview url: " + json.preview_url);
+			console.log("img: " + json.album.images[0].url);
+
+			this.currSong.album = json.album.name;
+			this.currSong.artist =  json.artists[0].name;
+			this.currSong.track =  json.name;
+			this.currSong.previewUrl = json.preview_url;
+			this.currSong.img = json.album.images[0].url;
 		}.bind(this));
+
+		this.updateDom();
+	},
+
+	updateDom: function() {
+		this.updateBackground();
+		this.updateAlbumArt();
+		this.updateTrackInfo();
+		this.updateQuote();
+		this.updatePreview();
+	},
+
+	updateBackground: function() {
+
+	},
+
+	updateAlbumArt: function() {
+
+	},	
+
+	updateTrackInfo: function() {
+
+	},
+
+	updateQuote: function() {
+
+	},
+
+	updatePreview: function() {
+
 	},
 
 	countKeys: function() {
