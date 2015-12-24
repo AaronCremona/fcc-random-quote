@@ -8,7 +8,10 @@ html, body, .main {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url('https://i.scdn.co/image/ddde54f8e79714523603388c3f76d136539bdb56') no-repeat center center fixed;
+	background-image: url('https://i.scdn.co/image/ddde54f8e79714523603388c3f76d136539bdb56');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: center;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;

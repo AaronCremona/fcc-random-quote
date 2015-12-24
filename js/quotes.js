@@ -48,9 +48,8 @@ var qm = {
 
 	updateBackground: function() {
 		var background = "url('" + this.currSong.img + "')";
-		console.log(background);
-		
-		$('body:before').css("background-image", "url('https://i.scdn.co/image/ddde54f8e79714523603388c3f76d136539bdb56')");
+
+		$('.background').css("background-image", background);
 	},
 
 	updateAlbumArt: function() {
