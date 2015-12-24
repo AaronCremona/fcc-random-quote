@@ -53,7 +53,7 @@ var qm = {
 	},
 
 	updateAlbumArt: function() {
-
+		$('.album-art img').attr('src', this.currSong.img);
 	},	
 
 	updateTrackInfo: function() {
