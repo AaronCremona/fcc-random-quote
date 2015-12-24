@@ -133,6 +133,10 @@ img {
 	padding: 0;
 }
 
+.lyric {
+	padding: 0.5em;
+}
+
 .buttons {
 	text-align: center;
 }
