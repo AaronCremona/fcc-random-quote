@@ -1,18 +1,31 @@
-var quoteMachine = {
-	keyArr: [],
+var qm = {
 	numKeys: 0,
-	currQuote: "",
 
-	initQM: function(){
-		this.populateKeyArr();
-		this.newRandomQuote();
+	currSong: {
+	},
+
+	init: function(){
+		this.countKeys();
+		return this.newRandomQuote();
 	},
 
 	newRandomQuote: function(){
 		var newKey = String(Math.floor(Math.random() * this.numKeys) + 1);
-		this.currQuote = this.quotes[newKey];
-		this.updateQuoteDiv()
-		this.updateSpotifyDiv();
+		var url = "https://api.spotify.com/v1/tracks/" + this.quotes[newKey].id;
+	
+		$.getJSON(url, function(json){
+			console.log(json.album.name);
+			console.log(json.artists[0].name);
+			console.log(json.name);
+			console.log(json.preview_url);
+			console.log(this.quotes);
+		}.bind(this));
+	},
+
+	countKeys: function() {
+		for (var key in this.quotes) {
+			this.numKeys++;
+		}
 	},
 
 	countChar: function() {
@@ -25,30 +38,6 @@ var quoteMachine = {
 			}
 		}
 	},
-
-	updateSpotifyDiv: function() {
-		// var url = "https://api.spotify.com/v1/tracks/" + this.currQuote.id;
-		var url = "json/" + this.currQuote.id;
-		$.getJSON(url, function(json){
-			console.log(json.album.name);
-			console.log(json.artists[0].name);
-			console.log(json.name);
-			console.log(json.preview_url);
-		});
-	},
-
-	updateQuoteDiv: function() {
-		console.log(this.currQuote.quote);
-	},
-
-	populateKeyArr: function() {
-		for (var key in this.quotes) {
-			this.keyArr.push(key);
-		}
-		this.numKeys = this.keyArr.length;
-	},
-
-
 
 	quotes: {
 		"1": {

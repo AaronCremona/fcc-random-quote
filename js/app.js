@@ -6,13 +6,11 @@ function resize() {
 }
 
 $(document).ready(function(){
+	qm.init();
 	resize();
-
 });
 
 $(window).resize(function() {
 	resize();
 });
 
-var qm = quoteMachine;
-qm.initQM();
