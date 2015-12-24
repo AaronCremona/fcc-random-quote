@@ -33,9 +33,9 @@ var qm = {
 			this.currSong.track =  json.name;
 			this.currSong.previewUrl = json.preview_url;
 			this.currSong.img = json.album.images[0].url;
-		}.bind(this));
 
-		this.updateDom();
+			this.updateDom();
+		}.bind(this));
 	},
 
 	updateDom: function() {
@@ -47,7 +47,10 @@ var qm = {
 	},
 
 	updateBackground: function() {
-
+		var background = "url('" + this.currSong.img + "')";
+		console.log(background);
+		
+		$('body:before').css("background-image", "url('https://i.scdn.co/image/ddde54f8e79714523603388c3f76d136539bdb56')");
 	},
 
 	updateAlbumArt: function() {
