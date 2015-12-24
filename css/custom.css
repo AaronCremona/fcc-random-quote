@@ -76,10 +76,10 @@ body:before {
 }
 
 .lyric-container {
-	font-size: 2em;
+	font-size: 1.5em;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 @media (min-width: 1000px) {
