@@ -39,17 +39,18 @@ var qm = {
 	},
 
 	updateDom: function() {
+		$('.app').hide();
 		this.updateBackground();
 		this.updateAlbumArt();
 		this.updateTrackInfo();
 		this.updateQuote();
 		this.updatePreview();
+		$('.app').fadeIn(1500);
 	},
 
 	updateBackground: function() {
 		var background = "url('" + this.currSong.img + "')";
-
-		$('.background').css("background-image", background);
+		$('.background').css("background-image", background).fadeIn("fast");
 	},
 
 	updateAlbumArt: function() {
