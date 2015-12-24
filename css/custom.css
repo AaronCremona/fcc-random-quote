@@ -36,33 +36,6 @@ html, body, .main {
 	border: red 1px dashed;
 }*/
 
-/*body {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-}
-
-body:before {
-	content: "";
-	position: absolute;
-	background: url('https://i.scdn.co/image/ddde54f8e79714523603388c3f76d136539bdb56') no-repeat center center fixed;
-	background-size: cover;
-	z-index: -1;
-	height: 20%;
-	width: 20%;
-	filter: brightness(.05);
-	filter: blur(2px);
-	-webkit-filter: brightness(.05);
-	-webkit-filter: blur(2px);
-	-moz-filter: brightness(.05);
-	-moz-filter: blur(2px);
-	-webkit-transform: scale(5);
-	-webkit-transform-origin: top left;
-}*/
-
 .row {
 	padding: 0;
 	margin: 0;
@@ -70,9 +43,6 @@ body:before {
 
 .main {
 	margin: 3%;
-/*	position: absolute;
-	top: 0;
-	left: 0;*/
 }
 
 .lyric-container {
