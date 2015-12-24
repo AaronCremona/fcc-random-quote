@@ -57,7 +57,11 @@ var qm = {
 	},	
 
 	updateTrackInfo: function() {
-
+		var trackInfo = this.currSong.artist +
+			" / " + this.currSong.album +
+			"<br />" + this.currSong.track;
+		console.log(trackInfo);
+		$('.track-info').html(trackInfo);
 	},
 
 	updateQuote: function() {

@@ -91,7 +91,7 @@ html, body, .main {
 }
 
 .song-info {
-	height: 10%;
+	min-height: 10%;
 }
 
 img {
