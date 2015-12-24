@@ -14,4 +14,8 @@ $(window).resize(function() {
 	resize();
 });
 
+$('#shuffle').on("click", function() {
+	qm.newRandomQuote()
+});
+
 qm.init();
