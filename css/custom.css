@@ -8,7 +8,7 @@ html, body, .main {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-image: url('https://i.scdn.co/image/ddde54f8e79714523603388c3f76d136539bdb56');
+	background-image: url('../img/placeholder.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-color: center;
@@ -65,7 +65,7 @@ html, body, .main {
 	}
 
 	.lyric-container {
-		font-size: 3em;
+		font-size: 2.5em;
 	}
 }
 
