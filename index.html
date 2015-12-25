@@ -19,13 +19,38 @@
     <![endif]-->
   </head>
   <body>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">About Lyrical Lunacy</h4>
+          </div>
+          <div class="modal-body">
+            <p>This website is a project I built for <a href="#" target="_blank">Free Code Camp's</a> Random Quote Zipline. I used Javascript and JQuery. I spent way too long listening to Spotify picking out songs to use for the app, but had a lot of fun doing it. I probably should have moved on to more Javascript instead!</p>
+            <p>Under the hood, I created an object to contain all the quotes and methods needed to retrieve the track preview from Spotify, images, and all the artist / track info. The only information I have stored in the object is the quote itself and the spotify ID for the track. Everything else is dynamically loaded. The app calculates the number of quotes available on startup, so it is easily modified. I was really thinking about diving into React right away for the Ziplines, but in the end I decided it would be better to get some more practice with the basics. I plan to work on beefing up my object oriented skill during the rest of the ziplines to have a better foundation to add React and backend technologies.</p>
+            <p>The site design was heavily influenced (read: *cough cough* ripped off *cough*) from Spotify's individual track landing pages. I really thought the blurred background album art was pretty sweet. In order to make easier to load dynamically, I had to get some css help here: <a href="https://css-tricks.com/perfect-full-page-background-image/" target="_blank">Perfect full page background image</a>
+            </p>
+            <p>If you are a Free Code Camper and want to do some code reviews for this or any other projects we have both finished (compare/contrast implementations) or just let me know what you think, hit me up: <a href='https://twitter.com/aroncremona' target="_blank">@aroncremona</a>. Thanks for checking out my project and good luck with yours. :)</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success modal-btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="background"></div>
     <div class="overlay"></div>
   	<div class="container-fluid main">
       <div class="row title-row">
         <div class="title grey-background">
           <h1>Lyrical Lunacy</h1>
-          <h2 class="subtitle">A Free Code Camp Joint by <a href='https://twitter.com/aroncremona' target="_blank">@aroncremona</a></h2>
+          <h2 class="subtitle">A Free Code Camp Joint by 
+            <a href='https://twitter.com/aroncremona' target="_blank">@aroncremona</a>
+            <a href="#" data-toggle="modal" data-target="#myModal" class="pull-right">About</a>
+          </h2>
         </div>
       </div>
   		<div class="row app">
@@ -67,8 +92,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
-    <script src="js/quotes.js"></script>
-	<script src="js/app.js"></script>
-
+   <script src="js/quotes.js"></script>
+	 <script src="js/app.js"></script>
   </body>
 </html>
