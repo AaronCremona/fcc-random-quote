@@ -22,12 +22,6 @@ var qm = {
 		this.currSong.quote = this.quotes[newKey].quote;
 
 		$.getJSON(url, function(json){
-			console.log("album name: " + json.album.name);
-			console.log("artist name: " + json.artists[0].name);
-			console.log("track name: " + json.name);
-			console.log("preview url: " + json.preview_url);
-			console.log("img: " + json.album.images[0].url);
-
 			this.currSong.album = json.album.name;
 			this.currSong.artist =  json.artists[0].name;
 			this.currSong.track =  json.name;
@@ -61,7 +55,6 @@ var qm = {
 		var trackInfo = this.currSong.artist +
 			" / " + this.currSong.album +
 			"<br />" + this.currSong.track;
-		console.log(trackInfo);
 		$('.track-info').html(trackInfo);
 	},
 
@@ -84,7 +77,7 @@ var qm = {
 		var length;
 		for(key in this.quotes) {
 			length = this.quotes[key].quote.length;
-			console.log("Key # " + key + "is " + length + " characters");
+			console.log("Key # " + key + " is " + length + " characters");
 			if (length > 144) {
 				console.log("shit that's too long");
 			}
