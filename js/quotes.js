@@ -272,7 +272,113 @@ var qm = {
 				I can gather all the news I need on the weather report.<br>\
 				Hey, I've got nothing to do today but smile.",
 			id: "5MbXzXGbqobR8xPVPs8OXA",
-		} 
+		},
+		"28": {
+			quote: "So I start a revolution from my bed<br>\
+				'Cos you said the brains I had went to my head.",
+			id: "7CVYxHq1L0Z4G84jTDS6Jl",
+		},
+		"29": {
+			quote: "And the ones that I make pay<br>\
+				Are never the ones who deserve it<br>\
+				And the ones who deserve it they'll never understand it<br>\
+				Yes, I know I am going to hell in a purple basket<br>\
+				At least I will be in another world, while you're pissing on my casket",
+			id: "5tySfs2d6KXneF5GbfHWE9",
+		},
+		"30": {
+			quote: "This is our decision, to live fast and die young.<br>\
+				We've got the vision, now let's have some fun.<br>\
+				Yeah, it's overwhelming, but what else can we do?<br>\
+				Get jobs in offices, and wake up for the morning commute?",
+			id: "4iG2gAwKXsOcijVaVXzRPW",
+		},
+		"31": {
+			quote: "I met him in a cell in New Orleans I was<br>\
+				down and out<br>\
+				He looked to me to be the eyes of age<br>\
+				as he spoke right out<br>\
+				He talked of life, talked of life, he laughed<br>\
+				clicked his heels and stepped",
+			id: "003d3VbyJTZiiOYT2W7fnQ",
+		},
+		"32": {
+			quote: "I'm a new soul<br>\
+				I came to this strange world<br>\
+				Hoping to learn a bit 'bout how to give and take<br>\
+				But since I came here, felt the joy and the fear<br>\
+				Finding myself making every possible mistake",
+			id: "6obMmMuVhvB0VMTZa5EJIP",
+		},
+		"33": {
+			quote: "Well, I've been afraid of changing<br>\
+				'Cause I've built my life around you<br>\
+				But time makes you bolder<br>\
+				Even children get older<br>\
+				And I'm getting older too",
+			id: "5ihS6UUlyQAfmp48eSkxuQ",
+		},
+		"34": {
+			quote: "Sunday morning, praise the dawning<br>\
+				It's just a restless feeling by my side<br>\
+				Early dawning, Sunday morning<br>\
+				It's just the wasted years so close behind",
+			id: "3lX49Bqy21Y5HneUJ7p55G",
+		},
+		"35": {
+			quote: "I've stopped my dreaming<br>\
+				I won't do too much scheming<br>\
+				These days, these days<br>\
+				These days I sit on corner stones<br>\
+				And count the time in quarter tones to ten<br>\
+				Please don't confront me with my failures<br>\
+				I had not forgotten them",
+			id: "2ZRBKVRMQ9OK4EeTaMHHSY",
+		},
+		"36": {
+			quote: "Stephanie says that she wants to know<br>\
+				Why she's given half her life, to people she hates now",
+			id: "1juscRi0i84j7ypDKeVY1H",
+		},
+		"37": {
+			quote: "My friends are gettin older,<br>\
+				So I guess I must be too.<br>\
+				Without their loving kindness,<br>\
+				I don't know what I'd do.<br>\
+				Oh the wine bottle's half empty-<br>\
+				The money's all spent.<br>\
+				And we're a cross between our parents<br>\
+				And hippies in a tent.",
+			id: "6YFBulokjnf14xNWFd2DdG",
+		},
+		"38": {
+			quote: "Fraka-kaka-kaka-kaka-kow!<br>\
+				Fraka-kaka-kaka-kaka-kow!<br>\
+				Fraka-kaka-kaka-kaka-kow!<br>\
+				What the fox say?",
+			id: "70Xf9wGwlpJXcdwFVAWbrQ",
+		},
+		"39": {
+			quote: 'We used to play pretend, give each other different names,<br>\
+				We would build a rocket ship and then we\'d fly it far away,<br>\
+				Used to dream of outer space but now they\'re laughing at our face,<br>\
+				Saying, "Wake up, you need to make money."',
+			id: "3CRDbSIZ4r5MsZ0YwxuEkn",
+		},
+		"40": {
+			quote: "People come, people go<br>\
+				Some grow young, some grow cold<br>\
+				I woke up in between<br>\
+				A memory and a dream",
+			id: "7MooGz4ZPE4bNxjFegR6Jx",
+		},
+		"41": {
+			quote: "We know the fire awaits unbelievers<br>\
+				All of the sinners the same<br>\
+				Girl, you and I will die unbelievers<br>\
+				Bound to the tracks of the train",
+			id: "7psPPGwhFzP3pyOcb3ivcT",
+		}  
 	}
 }
 
