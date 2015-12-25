@@ -77,8 +77,9 @@ var qm = {
 		var length;
 		for(key in this.quotes) {
 			length = this.quotes[key].quote.length;
-			console.log("Key # " + key + " is " + length + " characters");
-			if (length > 144) {
+			if (length > 127) {
+				console.log("Key # " + key + " is " + length + " characters");
+
 				console.log("shit that's too long");
 			}
 		}
@@ -116,7 +117,8 @@ var qm = {
 			id: "1wHSxWBfPr3GO31y8KGrWe",
 		},
 		"6": {
-			quote: "People talking without speaking, people hearing without listening",
+			quote: "People talking without speaking, <br> \
+				people hearing without listening",
 			id: "2LkaNhCrNVmcYgXJeLVmsw",
 		},
 		"7": {
@@ -126,7 +128,7 @@ var qm = {
 				From the thirteenth century  <br> \
 				And every one of them words rang true  <br> \
 				And glowed like burning coal  <br> \
-				Poidng off of every page  <br> \
+				Pouring off of every page  <br> \
 				Like it was written in my soul from me to you  <br> \
 				Tangled up in blue",
 			id: "6Vcwr9tb3ZLO63F8DL8cqu",
@@ -146,7 +148,7 @@ var qm = {
 			id: "3AhXZa8sUQht0UEdBJgpGc",
 		},
 		"10": {
-			quote: "I can't tell where the journey will end  <br> \
+			quote: "I can't tell where the journey will end <br> \
 				But I know where to start",
 			id: "4h8VwCb1MTGoLKueQ1WgbD",
 		},
@@ -164,7 +166,7 @@ var qm = {
 			id: "5hcer4MP5GeHqtSjDYx5AC",
 		},
 		"13": {
-			quote: "You and I can both get jobs<br> \
+			quote: "You and I can both get jobs <br> \
 				And finally see what it means to be living",
 			id: "2M9ro2krNb7nr7HSprkEgo",
 		},
