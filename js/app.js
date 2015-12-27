@@ -6,6 +6,7 @@ function resize() {
     setTimeout(resize, 400);
   }
 
+  console.log(imgWidth);
   $(".left-col-width").css("width", imgWidth + "px");
   
   if ($(window).width() >= 992) {
