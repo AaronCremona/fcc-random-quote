@@ -45,7 +45,7 @@ var qm = {
 
 	updateBackground: function() {
 		var background = "url('" + this.currSong.img + "')";
-		$('.background').css("background-image", background).fadeIn("fast");
+		$('.background-container').css("background-image", background).fadeIn("fast");
 	},
 
 	updateAlbumArt: function() {
@@ -378,7 +378,45 @@ var qm = {
 				Girl, you and I will die unbelievers<br>\
 				Bound to the tracks of the train",
 			id: "7psPPGwhFzP3pyOcb3ivcT",
-		}  
+		},
+		"42": {
+			quote: "People say I'm lazy, dreaming my life away<br>\
+				Well, they give me all kinds of advice designed to enlighten me<br>\
+				When I tell them that I'm doing fine watching shadows on the wall<br>\
+				\"Don't you miss the big time, boy. You're no longer on the ball\"",
+			id: "4fKhRRYn7F5shZItjJkPJU",
+		},
+		"43": {
+			quote: "Yesterday, all my troubles seemed so far away<br>\
+				Now it looks as though they’re here to stay<br>\
+				Oh, I believe in yesterday",
+			id: "3BQHpFgAp4l80e1XslIjNI",
+		},
+		"44": {
+			quote: "And when the broken hearted people living in the world agree<br>\
+				There will be an answer, let it be",
+			id: "7iN1s7xHE4ifF5povM6A48",
+		},
+		"45": {
+			quote: "Living is easy with eyes closed
+				Misunderstanding all you see
+				It's getting hard to be someone
+				But it all works out
+				It doesn't matter much to me",
+			id: "7cJNjpJZmMeaEjAiHZ36VV",
+		},
+		"46": {
+			quote: "All these places have their moments
+				with lovers and friends I still can't recall.
+				Some are dead and some are living.
+				In my life I love them all.",
+			id: "3KfbEIOC7YIv90FIfNSZpo",
+		},
+		"47": {
+			quote: "Half of what I say is meaningless<br>\
+				But I say it just to reach you, Julia",
+			id: "https://play.spotify.com/track/5FnpXVgDOk2sLT58qM22Of",
+		},
 	}
 }
 
