@@ -173,3 +173,7 @@ img {
   background-color: rgba(92, 184, 92, .9);
   border-color: rgba(76, 174, 76, .9);
 }
+
+.track-info {
+  width: 100%;
+}

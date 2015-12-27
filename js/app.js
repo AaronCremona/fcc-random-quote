@@ -3,7 +3,7 @@ qm.init();
 function resize() {
   var imgWidth = $(".album-art .img").width();
   if (imgWidth === 0) {
-    setTimeout(resize, 400);
+    setTimeout(resize, 500);
   }
 
   console.log(imgWidth);
@@ -22,7 +22,7 @@ function resize() {
 }
 
 $(window).load(function() {
-  resize();
+  setTimeout(resize, 500);
 });
 
 $(window).resize(function() {
