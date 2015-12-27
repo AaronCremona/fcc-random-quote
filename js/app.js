@@ -7,14 +7,13 @@ function resize() {
   }
   $(".left-col-width").css("width", imgWidth + "px");
   
-  if (parseInt($(window).width,10) >= 992) {
+  if ($(window).width() >= 992) {
     var albumContainerHeight = parseInt($(".album-container").css("height"), 10);
     $('.lyric-container').css("min-height", albumContainerHeight + "px");
   }
   
   var containerHeight = parseInt($(".main-container").css("height"), 10);
   var backgroundHeight = parseInt($(".background-container").css("height"), 10);
-  console.log(containerHeight + " " + backgroundHeight);
   if (containerHeight > backgroundHeight) {
     $(".background-container, .overlay").css("height", containerHeight + "px");
   }
