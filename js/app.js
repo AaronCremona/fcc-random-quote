@@ -1,10 +1,11 @@
 qm.init();
 
 function resize() {
-  var imgWidth = parseInt($(".album-art .img").css("width"), 10);
+  var imgWidth = $(".album-art .img").width();
   if (imgWidth === 0) {
     setTimeout(resize, 400);
   }
+
   $(".left-col-width").css("width", imgWidth + "px");
   
   if ($(window).width() >= 992) {
