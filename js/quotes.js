@@ -1,100 +1,86 @@
 var qm = {
-	numKeys: 0,
+  numKeys: 0,
 
-	currSong: {
-		artist: "",
-		album: "",
-		track: "",
-		img: "",
-		previewUrl: "",
-		quote: ""
-	},
+  currSong: {
+    artist: "",
+    album: "",
+    track: "",
+    img: "",
+    previewUrl: "",
+    quote: ""
+  },
 
-	init: function(){
-		this.countKeys();
-		this.newRandomQuote();
-	},
+  init: function() {
+    this.countKeys();
+    this.newRandomQuote();
+  },
 
-	newRandomQuote: function(){
-		var newKey = String(Math.floor(Math.random() * this.numKeys) + 1);
-		var url = "https://api.spotify.com/v1/tracks/" + this.quotes[newKey].id;
-		
-		this.currSong.quote = this.quotes[newKey].quote;
+  newRandomQuote: function() {
+    var newKey = String(Math.floor(Math.random() * this.numKeys) + 1);
+    var url = "https://api.spotify.com/v1/tracks/" + this.quotes[newKey].id;
 
-		$.getJSON(url, function(json){
-			this.currSong.album = json.album.name;
-			this.currSong.artist =  json.artists[0].name;
-			this.currSong.track =  json.name;
-			this.currSong.previewUrl = json.preview_url;
-			this.currSong.img = json.album.images[0].url;
+    this.currSong.quote = this.quotes[newKey].quote;
 
-			this.updateDom();
-		}.bind(this));
-	},
+    $.getJSON(url, function(json) {
+      this.currSong.album = json.album.name;
+      this.currSong.artist = json.artists[0].name;
+      this.currSong.track = json.name;
+      this.currSong.previewUrl = json.preview_url;
+      this.currSong.img = json.album.images[0].url;
 
-	updateDom: function() {
-		$('.app').hide();
-		this.updateBackground();
-		this.updateAlbumArt();
-		this.updateTrackInfo();
-		this.updateQuote();
-		this.updatePreview();
-		this.updateTweet();
-		$('.app').fadeIn(1500);
-	},
+      this.updateDom();
+    }.bind(this));
+  },
 
-	updateBackground: function() {
-		var background = "url('" + this.currSong.img + "')";
-		$('.background-container').css("background-image", background).fadeIn("fast");
-	},
+  updateDom: function() {
+    $('.app').hide();
+    this.updateBackground();
+    this.updateAlbumArt();
+    this.updateTrackInfo();
+    this.updateQuote();
+    this.updatePreview();
+    this.updateTweet();
+    $('.app').fadeIn(1500);
+  },
 
-	updateAlbumArt: function() {
-		$('.album-art img').attr('src', this.currSong.img);
-	},	
+  updateBackground: function() {
+    var background = "url('" + this.currSong.img + "')";
+    $('.background-container').css("background-image", background).fadeIn("fast");
+  },
 
-	updateTrackInfo: function() {
-		var trackInfo = this.currSong.artist +
-			" / " + this.currSong.album +
-			"<br />" + this.currSong.track;
-		$('.track-info').html(trackInfo);
-	},
+  updateAlbumArt: function() {
+    $('.album-art img').attr('src', this.currSong.img);
+  },
 
-	updateQuote: function() {
-		$('.lyric').html("<p>" + this.currSong.quote + "</p>");
-	},
+  updateTrackInfo: function() {
+    var trackInfo = this.currSong.artist +
+      " / " + this.currSong.album +
+      "<br />" + this.currSong.track;
+    $('.track-info').html(trackInfo);
+  },
 
-	updatePreview: function() {
-		$('.preview video source').attr('src', this.currSong.previewUrl);
-		$(".preview video")[0].load();
-	},
+  updateQuote: function() {
+    $('.lyric').html("<p>" + this.currSong.quote + "</p>");
+  },
 
-	updateTweet: function() {
-		console.log(this.currSong.quote);
-		var quote = this.currSong.quote.replace(/<br>\s\s+/g, " ");
-		console.log(quote);
-		console.log(quote.length);
-		var url = "https://twitter.com/intent/tweet?text=" + encodeURI(quote) + " @aaroncremona";
+  updatePreview: function() {
+    $('.preview video source').attr('src', this.currSong.previewUrl);
+    $(".preview video")[0].load();
+  },
 
-		$('#tweet-btn').attr('href', url);
-	},
+  updateTweet: function() {
+    var quote = this.currSong.quote.replace(/<br>\s\s+/g, " ");
+    var url = "https://twitter.com/intent/tweet?text=" + encodeURI(quote) + " @aaroncremona";
 
-	countKeys: function() {
-		for (var key in this.quotes) {
-			this.numKeys++;
-		}
-	},
+    $('#tweet-btn').attr('href', url);
+  },
 
-	countChar: function() {
-		var length;
-		for(key in this.quotes) {
-			length = this.quotes[key].quote.length;
-			if (length > 127) {
-				console.log("Key # " + key + " is " + length + " characters");
+  countKeys: function() {
+    for (var key in this.quotes) {
+      this.numKeys++;
+    }
+  },
 
-				console.log("shit that's too long");
-			}
-		}
-	},
 
 	quotes: {
 		"1": {
@@ -398,17 +384,17 @@ var qm = {
 			id: "7iN1s7xHE4ifF5povM6A48",
 		},
 		"45": {
-			quote: "Living is easy with eyes closed
-				Misunderstanding all you see
-				It's getting hard to be someone
-				But it all works out
+			quote: "Living is easy with eyes closed<br>\
+				Misunderstanding all you see<br>\
+				It's getting hard to be someone<br>\
+				But it all works out<br>\
 				It doesn't matter much to me",
 			id: "7cJNjpJZmMeaEjAiHZ36VV",
 		},
 		"46": {
-			quote: "All these places have their moments
-				with lovers and friends I still can't recall.
-				Some are dead and some are living.
+			quote: "All these places have their moments<br>\
+				with lovers and friends I still can't recall.<br>\
+				Some are dead and some are living.<br>\
 				In my life I love them all.",
 			id: "3KfbEIOC7YIv90FIfNSZpo",
 		},

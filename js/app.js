@@ -1,3 +1,5 @@
+qm.init();
+
 function resize() {
   var imgWidth = parseInt($(".album-art .img").css("width"), 10);
   if (imgWidth === 0) {
@@ -12,21 +14,20 @@ function resize() {
   
   var containerHeight = parseInt($(".main-container").css("height"), 10);
   var backgroundHeight = parseInt($(".background-container").css("height"), 10);
+  console.log(containerHeight + " " + backgroundHeight);
   if (containerHeight > backgroundHeight) {
     $(".background-container, .overlay").css("height", containerHeight + "px");
   }
 }
 
-$(window).load(function(){
-	resize();
+$(window).load(function() {
+  resize();
 });
 
 $(window).resize(function() {
-	resize();
+  resize();
 });
 
 $('#shuffle').on("click", function() {
-	qm.newRandomQuote()
+  qm.newRandomQuote();
 });
-
-qm.init();
